@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all 2s;
+}
+
+body{
+    background-color: white;
+}
+
+section{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 0.5rem;
+    z-index: 2;
+    border: 3px solid black;
+    background-color: white;
+}
+
+#fingerPrint{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.hint{
+    transition: none;
+    border: 3px solid rgba(0,0,0,0.25)
+}
+
+.win{
+    transition: all 2s;
+    transform: scale(2);
+    background: radial-gradient(closest-side, rgba(0,0,0,0), #fff, #f69d3c);
+    border: 4px solid orange;
+}
